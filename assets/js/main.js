@@ -22,9 +22,6 @@ while (dinero < precio){
 let vuelto = dinero - precio
 alert ("Su pago es de $" + precio + " y su cambio es $" + vuelto + " ¡GRACIAS POR SU COMPRA!")
 
-console.log(vuelto(precio - dinero))
-function vuelto(parametro1, parametro2){
-    return parametro1 - parametro2
-}
+
 
 
