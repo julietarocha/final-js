@@ -5,8 +5,8 @@ alert ("Bienvenido, " + nombre  + "!. ¿Que estas buscando?")
 let calzado = prompt ("Ingrese tipo de calzado (1 = bota, 2 = borcego)")
 while (calzado != 1 && calzado != 2) {
     alert ("El calzado no existe")
+    calzado = prompt ("Ingrese tipo de calzado (1 = bota, 2 = borcego)")
 }
-calzado = prompt ("Ingrese tipo de calzado (1 = bota, 2 = borcego)")
 if (calzado == 1){
     precio = 8650
 }else {
