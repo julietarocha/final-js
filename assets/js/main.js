@@ -15,6 +15,12 @@ window.addEventListener('click', e=>{
     }
 });
 
+const imagenes = document.querySelectorAll('.img-galeria');
 
+imagenes.forEach(imagen =>{
+    imagen.addEventListener('click', ()=>{
+        alert("¿Te gusta esta imagen?")
+    })
+});
 
 
