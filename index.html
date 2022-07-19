@@ -5,56 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+  <header class="header" id="inicio">
+    <img src="imagenes/iconos/hamburger.svg" alt="menu-pequeño" class="hamburger">
+    <nav class="menu-navegacion">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galería</a>
+      <a href="#expertos">Expertos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="contenedor head">
+      <h1 class="titulo">Creamos tu página web</h1>
+    </div>
+  </header>
 
-        <!--ZONA NAVEGABLE-->
-        
-        <nav class="navbar navbar-expand-lg navbar-light background-nav">
-            <div class="container-fluid">
-              <a class="navbar-brand animate_animated animate__pulse" href="index.html">
-                <img src="" class="" alt="logo">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end menu-list" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="">PRODUCTOS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="">AYUDA & INFO</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="">CONTACTO</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
+  <main>
+    <!------------------------------SERVICIOS------------------------------------->
+    <section class="contenedor" id="servicios">
+      <h2 class="subtitulo">Nuestros servicios</h2>
+      <div class="contenedor-servicio">
+        <img src="imagenes/iconos/check-list.svg" alt="check-list">
+        <div class="checklist-servicios">
+          <div class="service">
+            <h3 class="n-service"><span class="number">1</span>Diseño web</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam facilis dolore ab eaque tempora esse est laboriosam ipsa ipsum mollitia.</p>
+          </div>
+          <div class="service">
+            <h3 class="n-service"><span class="number">2</span>Multimedia</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam facilis dolore ab eaque tempora esse est laboriosam ipsa ipsum mollitia.</p>
+          </div>
+          <div class="service">
+            <h3 class="n-service"><span class="number">3</span>Desarrollo web</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam facilis dolore ab eaque tempora esse est laboriosam ipsa ipsum mollitia.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <main>
-        <div class="div-h1">
-            <h1 class="sectio-h1"><strong>Bota, borcego, zapatilla</strong></h1>
-            <h2 class="section-h3"><em>¿Cuál va más con vos?</em></h2>
-        </div>        
-    </main>
+    <!------------------------------GALERIA--------------------------------------->
+    <section class="gallery" id="galeria">
+      <div class="contenedor">
+        <h2 class="subtitulo">Galería</h2>
+        <div class="contenedor-gallery">
+          <img src="imagenes/uno.jpg" alt="gal-1" class="img-galeria">
+          <img src="imagenes/dos.jpg" alt="gal-2" class="img-galeria">
+          <img src="imagenes/tres.jpg" alt="gal-3" class="img-galeria">
+          <img src="imagenes/cuatro.jpg" alt="gal-4" class="img-galeria">
+          <img src="imagenes/cinco.jpg" alt="gal-5" class="img-galeria">
+          <img src="imagenes/seis.jpg" alt="gal-6" class="img-galeria">
+        </div>
+      </div>
+    </section>
+    <section class="imagen-light">
+      <img src="imagenes/iconos/close.svg" alt="cruz" class="close">
+      <img src="imagenes/iconos/portada.jpg" alt="img-arriba" class="agregar-imagen">
+    </section> 
 
-    <footer>
-        <!--PIE DE PAGINA-->
-    
-            <!--INFORMACION-->
-        
-        <!--ICONOS REDES-->
-    
-    </footer>
-
+    <!------------------------------EXPERTOS-------------------------------------->
+    <section class="contenedor" id="expertos">
+      <h2 class="subtitulo">Expertos en:</h2>
+      <section class="experts">
+        <div class="cont-expert">
+          <img src="imagenes/iconos/analytic.svg" alt="analytic">
+          <h3 class="n-expert">Analytic</h3>
+        </div>
+        <div class="cont-expert">
+          <img src="imagenes/iconos/seo.svg" alt="seo">
+          <h3 class="n-expert">SEO</h3>
+        </div>
+        <div class="cont-expert">
+          <img src="imagenes/iconos/security.svg" alt="security">
+          <h3 class="n-expert">Security</h3>
+        </div>
+      </section>
+    </section>
+  </main>
+  <footer id="contacto">
+    <div class="contenedor footer-content">
+      <div class="contact-us">
+        <h2 class="brand">JR Design</h2>
+        <p>Creamos tus sueños</p>
+      </div>
+      <div class="social-media">
+        <a href="./" class="social-media-icon">
+          <i class='bx bxl-facebook'></i>
+        </a>
+        <a href="./" class="social-media-icon">
+          <i class='bx bxl-twitter'></i>
+        </a>
+        <a href="./" class="social-media-icon">
+          <i class='bx bxl-instagram'></i>
+        </a>
+      </div>
+    </div>
+  </footer>
 
 <!--SCRIPT JAVASCRIPT-->
     <script src="./assets/js/main.js"></script>
