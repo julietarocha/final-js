@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>JR Design</title>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 <body>
-  <header class="header" id="inicio">
+  <header class="header">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <i class="bx bx-cart"></i><span id="contadorCarrito">0</span>
+    </button>
+    <!--
+    <section id="inicio"> 
     <img src="imagenes/iconos/hamburger.svg" alt="menu-pequeño" class="hamburger">
     <nav class="menu-navegacion">
       <a href="#inicio">Inicio</a>
@@ -18,10 +25,11 @@
       <a href="#galeria">Galería</a>
       <a href="#expertos">Expertos</a>
       <a href="#contacto">Contacto</a>
-    </nav>
+    </nav>-->
     <div class="contenedor head">
       <h1 class="titulo">Creamos tu página web</h1>
     </div>
+  </section> 
   </header>
 
   <main>
@@ -32,16 +40,19 @@
         <img src="imagenes/iconos/check-list.svg" alt="check-list">
         <div class="checklist-servicios">
           <div class="service">
-            <h3 class="n-service"><span class="number">1</span>Diseño web</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam facilis dolore ab eaque tempora esse est laboriosam ipsa ipsum mollitia.</p>
+            <h3 class="n-service" id="1"><span class="number">1</span>Diseño web</h3>
+            <p>Creamos el diseño ideal para tu página.</p>
+            <p>Precio: $40.000</p>
           </div>
           <div class="service">
-            <h3 class="n-service"><span class="number">2</span>Multimedia</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam facilis dolore ab eaque tempora esse est laboriosam ipsa ipsum mollitia.</p>
+            <h3 class="n-service" id="2"><span class="number">2</span>Multimedia</h3>
+            <p>Pensamos el mejor contenido multimedia para tu página.</p>
+            <p>Precio: $20.500</p>
           </div>
           <div class="service">
-            <h3 class="n-service"><span class="number">3</span>JavaScript</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam facilis dolore ab eaque tempora esse est laboriosam ipsa ipsum mollitia.</p>
+            <h3 class="n-service" id="3"><span class="number">3</span>JavaScript</h3>
+            <p>Expertxs en darle mágia a tu página.</p>
+            <p>Precio: $30.700</p>
           </div>
         </div>
       </div>
@@ -86,6 +97,27 @@
     </section>
   </main>
 
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="contenedor-carrito">
+        <p>Diseño Web</p>
+        <p>Precio: $40000</p>
+        <button class="boton-eliminar"></button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
    <!-------------------------------FOOTER----------------------------------------> 
   <footer id="contacto">
     <div class="contenedor footer-content">
@@ -109,5 +141,6 @@
 
 <!--SCRIPT JAVASCRIPT-->
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/service.js"></script>
 </body>
 </html>
