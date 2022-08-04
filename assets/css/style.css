@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 *{
@@ -14,17 +15,25 @@
     color: #95CD41;
     font-family: 'Great Vibes', cursive;
     font-size: 50px;
-    margin: 5%;
+    margin: 10% 0 5% 5%;
+}
+
+#contenedor-productos{
+    max-width: 1200px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .producto{
-    max-width: 30%;
+    max-width: 25%;
     padding: 10px;
     margin-bottom: 20px;
     box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
-/*---------------FOOTER---------------
+---------------FOOTER---------------
 footer{
     background: #9f8ad0;
     padding-bottom: 0.1px;
@@ -78,4 +87,4 @@ footer{
 .social-media-icon i{
     font-size: 30px;
     line-height: 60px;
-} */
+} 
