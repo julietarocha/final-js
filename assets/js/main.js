@@ -1,9 +1,11 @@
 
-let carritoCompras = []
+let carritoDeCompras = []
 
-let contenedorProductos = document.getElementById('contenedor-productos');
+let contenedorProductos = document.getElementById('contenedor-productos')
+let contenedorCarrito = document.getElementById('contenedor-carrito')
+let agregarAlCarrito = document.getElementById('producto')
 
-
+/*
 function mostrarProductos() {
     stockProductos.forEach(item => {
         let div = document.createElement('div')
@@ -19,9 +21,25 @@ function mostrarProductos() {
                         </div>`
         contenedorProductos.appendChild(div)
     })
+    agregarAlCarrito()
+} */
+
+function agregarAlCarrito(){
+    let productoAgregar = prompt("¿Que producto quiere agregar?").toLowerCase()
+    let encontrado = stockProductos.find(element => element.nombre.toLowerCase() == productoAgregar)
+    carritoDeCompras.push(encontrado)
+    mostrarCarrito(encontrado)
 }
 
-
+function mostrarCarrito(encontrado){
+    let div = document.createElement('div')
+    div.className = 'productoEnCarrito'
+    div.innerHTML = `   <p>${encontrado.nombre}</p>
+                        <p>Precio: $${encontrado.precio}</p>
+                        <button class="boton-eliminar"><i class="bx bx-trash"></i></button>
+                    `
+    contenedorCarrito.appendChild(div)
+}
 
 
 
