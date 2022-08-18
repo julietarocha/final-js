@@ -22,6 +22,12 @@
     margin: 10% 0 10% 5%;
 }
 
+.list{
+    display: flex;
+    justify-content: flex-end;
+    color:#2C3639;
+}
+/*
 #contenedor-productos{
     max-width: 1200px;
     margin: 60px auto;
@@ -46,7 +52,7 @@
     color: red;
     background-color: none;
 }
-
+*/
 /*---------------FOOTER---------------*/
 footer{
     background: #F0EBE3;

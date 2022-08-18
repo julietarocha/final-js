@@ -12,7 +12,7 @@ function mostrarProductos() {
         let div = document.createElement('div')
         div.className = 'producto'
         div.innerHTML = ` <div class="card">
-                            <img src="${item.imagenes}" class="card-img-top" alt="lab1-nude">
+                            <img src="${item.img}" class="card-img-top" alt="lab1-nude">
                             <div class="card-body">
                                 <h5 class="card-title">${item.nombre}</h5>
                                 <p class="card-text">${item.desc}</p>
